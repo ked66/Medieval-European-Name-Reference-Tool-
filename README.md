@@ -50,7 +50,7 @@ The app has four main features:
 
 ### Reactive Table
 
-Table allows users to filter names and name variations by the following criteria:
+Reactive Data Table allows users to filter names and name variations by the following criteria:
 
 *  Name Type - show all names & variation, only CNF names, or only variations of a selected CNF
 *  Country of Use - option to show only names used in selected country/countries
@@ -62,7 +62,7 @@ Users can also search by name meaning, and sort by number of recorded uses (an i
 
 ### Summary of Etymology and Usage
 
-For each CNF, this section has a page which displays the following information:
+For a selected CNF, this Reactive User Interface displays the following information:
 
 *  Etymology - language of origin, the name written in that language (if that language doesn't use the Latin alphabet), and meaning
 *  List of notable Medieval people with the CNF (e.g. Biblical characters, Saints, monarchs)
@@ -78,19 +78,24 @@ For each CNF, users can elect to graph usage over time in two ways:
 *  Number of uses by century - graph CNF as a whole and up to 10 variations
 *  Variations as percent of CNF uses by century - graph up to 10 variations
 
-**  e.g. If a CNF has 3 recorded uses in the 12th century, and variation_A has 1 recorded use in the 12th century, then variation_A represents 33% of recorded uses in the 12th century  
+    - e.g. If a CNF has 3 recorded uses in the 12th century, and variation_A has 1 recorded use in the 12th century, then variation_A represents 33% of recorded uses in the 12th century  
 
 Clicking on the graph displays uses by name variation by century - in numbers and percent of CNF uses.
 
+This graph is generated via two Reactive Data Tables (one for CNF names, one for variations), which provide the data. The graph is stored as a Reactive Value that Renders when users click a "Graph Now" button. Clicking functionality comes from a Reactive User Interface connected with the Data Tables.
+
 ### Interactive Chloropleth Map
 
-This interactive map is generated using leaflet and a geojson map of Europe downloaded from LINK.
+This interactive map is generated using Leaflet and a geojson map of Europe downloaded from https://geojson-maps.ash.ms/. 
 
 For each CNF, users can elect to graph usage across Europe in two ways:
 
-*  Number of uses by country - e.g. a country with 14 uses of "John" will be darker than a country with 5 uses of "John"
-*  Percent of all uses by country - e.g. a country where 20% of all recorded name uses were "John" will be darker than a country where 10% of all recorded name uses were "John"
+*  Number of uses by country
+    - e.g. a country with 14 uses of "John" will be darker than a country with 5 uses of "John"
+*  Percent of all uses by country
+    - e.g. a country where 20% of all recorded name uses were "John" will be darker than a country where 10% of all recorded name uses were "John"
 
-Clicking on a country in the graph will display all variations of the CNF with recorded uses in that country, with a year range of recorded use.
+Clicking on a country in the graph will display all variations of the CNF with recorded uses in that country, with a year range of recorded use. This functionality is directly part of the Leaflet map.
 
+### Images
 Aside from graphs, all images in this app come from the Metropolitan Museum of Art and are designated as being in the Public Domain.
