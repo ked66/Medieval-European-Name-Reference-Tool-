@@ -4,6 +4,8 @@
 
 The purpose of this app is to explore the usage of various forenames (AKA "given names" or "first names") in Medieval Europe, c. 500 - 1600 AD. All data is from the Dictionary of Medieval Names from European Sources, reformatted for easy visualization. Detailed information regarding the research process can be found on their website. 
 
+The app can be accessed here: https://katherine-dillon15.shinyapps.io/Medieval-European-Name-Reference-Tool-/
+
 ## Data
 
 The code used to scrape data from DMNES.org is found in "Webscraping Functions.R" and "Variations Scrape.R". For each name, the following information was scraped:
