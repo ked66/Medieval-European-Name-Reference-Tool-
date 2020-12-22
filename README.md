@@ -2,6 +2,8 @@
 
 ## App Purpose
 
+![Screenshot of App Homepage](https://github.com/ked66/Medieval-European-Name-Reference-Tool-/blob/master/images/Home.png)
+
 The purpose of this app is to explore the usage of various forenames (AKA "given names" or "first names") in Medieval Europe, c. 500 - 1600 AD. All data is from the Dictionary of Medieval Names from European Sources, reformatted for easy visualization. Detailed information regarding the research process can be found on their website. 
 
 The app can be accessed here: https://katherine-dillon15.shinyapps.io/Medieval-European-Name-Reference-Tool-/
@@ -52,6 +54,8 @@ The app has four main features:
 
 ### Reactive Table
 
+![Screenshot of Reactive Table with example search](https://github.com/ked66/Medieval-European-Name-Reference-Tool-/blob/master/images/Search%20Example.png)
+
 Reactive Data Table allows users to filter names and name variations by the following criteria:
 
 *  Name Type - show all names & variation, only CNF names, or only variations of a selected CNF
@@ -62,7 +66,11 @@ Reactive Data Table allows users to filter names and name variations by the foll
 
 Users can also search by name meaning, and sort by number of recorded uses (an imperfect surrogate measure of popularity).
 
+<img src="https://github.com/ked66/Medieval-European-Name-Reference-Tool-/blob/master/images/Filter%20Options.png" alt="Screenshot of table filter options" width="33%"/>
+
 ### Summary of Etymology and Usage
+
+![Screenshot of Additional Information Tab](https://github.com/ked66/Medieval-European-Name-Reference-Tool-/blob/master/images/Additional%20Information.png)
 
 For a selected CNF, this Reactive User Interface displays the following information:
 
@@ -74,6 +82,8 @@ For a selected CNF, this Reactive User Interface displays the following informat
 If a user selects a name variation, the CNF for that variation is displayed.
 
 ### Interactive Line Graph
+
+![Screenshot of Usage Over Time tab](https://github.com/ked66/Medieval-European-Name-Reference-Tool-/blob/master/images/Usage%20Over%20Time.png)
 
 For each CNF, users can elect to graph usage over time in two ways:
 
@@ -87,6 +97,8 @@ Clicking on the graph displays uses by name variation by century - in numbers an
 This graph is generated via two Reactive Data Tables (one for CNF names, one for variations), which provide the data. The graph is stored as a Reactive Value that Renders when users click a "Graph Now" button. Clicking functionality comes from a Reactive User Interface connected with the Data Tables.
 
 ### Interactive Chloropleth Map
+
+![Screenshot of Name Distribution tab](https://github.com/ked66/Medieval-European-Name-Reference-Tool-/blob/master/images/Name%20Distribution.png)
 
 This interactive map is generated using Leaflet and a geojson map of Europe downloaded from https://geojson-maps.ash.ms/. 
 
